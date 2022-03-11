@@ -892,13 +892,13 @@
    'C:\\Users\\Samir '
    'Hussein\\AppData\\Local\\Programs\\Python\\Python310\\lib\\_py_abc.py',
    'PYMODULE'),
-  ('tracemalloc',
-   'C:\\Users\\Samir '
-   'Hussein\\AppData\\Local\\Programs\\Python\\Python310\\lib\\tracemalloc.py',
-   'PYMODULE'),
   ('stringprep',
    'C:\\Users\\Samir '
    'Hussein\\AppData\\Local\\Programs\\Python\\Python310\\lib\\stringprep.py',
+   'PYMODULE'),
+  ('tracemalloc',
+   'C:\\Users\\Samir '
+   'Hussein\\AppData\\Local\\Programs\\Python\\Python310\\lib\\tracemalloc.py',
    'PYMODULE'),
   ('shutil',
    'C:\\Users\\Samir '
@@ -992,13 +992,13 @@
    'C:\\Users\\Samir '
    'Hussein\\AppData\\Local\\Programs\\Python\\Python310\\DLLs\\_socket.pyd',
    'EXTENSION'),
-  ('libcrypto-1_1.dll',
-   'C:\\Users\\Samir '
-   'Hussein\\AppData\\Local\\Programs\\Python\\Python310\\DLLs\\libcrypto-1_1.dll',
-   'BINARY'),
   ('libssl-1_1.dll',
    'C:\\Users\\Samir '
    'Hussein\\AppData\\Local\\Programs\\Python\\Python310\\DLLs\\libssl-1_1.dll',
+   'BINARY'),
+  ('libcrypto-1_1.dll',
+   'C:\\Users\\Samir '
+   'Hussein\\AppData\\Local\\Programs\\Python\\Python310\\DLLs\\libcrypto-1_1.dll',
    'BINARY'),
   ('libffi-7.dll',
    'C:\\Users\\Samir '

@@ -195,7 +195,7 @@ def rm_dir():
                     os.rmdir(dir)
                 else:
                     # messaging saying folder not empty
-                    return print("Folder is not empty")
+                    return print("Folder is not empty, use rmdir -f to remove it")
         else:
             return print("The directory is not found")
     return

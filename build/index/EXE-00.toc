@@ -122,13 +122,13 @@
    'C:\\Users\\Samir '
    'Hussein\\AppData\\Local\\Programs\\Python\\Python310\\DLLs\\_socket.pyd',
    'EXTENSION'),
-  ('libcrypto-1_1.dll',
-   'C:\\Users\\Samir '
-   'Hussein\\AppData\\Local\\Programs\\Python\\Python310\\DLLs\\libcrypto-1_1.dll',
-   'BINARY'),
   ('libssl-1_1.dll',
    'C:\\Users\\Samir '
    'Hussein\\AppData\\Local\\Programs\\Python\\Python310\\DLLs\\libssl-1_1.dll',
+   'BINARY'),
+  ('libcrypto-1_1.dll',
+   'C:\\Users\\Samir '
+   'Hussein\\AppData\\Local\\Programs\\Python\\Python310\\DLLs\\libcrypto-1_1.dll',
    'BINARY'),
   ('libffi-7.dll',
    'C:\\Users\\Samir '
@@ -140,7 +140,7 @@
  [],
  False,
  False,
- 1647039118,
+ 1647039594,
  [('run.exe',
    'C:\\Users\\Samir '
    'Hussein\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\PyInstaller\\bootloader\\Windows-64bit\\run.exe',

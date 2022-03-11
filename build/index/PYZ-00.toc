@@ -855,13 +855,13 @@
    'C:\\Users\\Samir '
    'Hussein\\AppData\\Local\\Programs\\Python\\Python310\\lib\\_py_abc.py',
    'PYMODULE'),
-  ('tracemalloc',
-   'C:\\Users\\Samir '
-   'Hussein\\AppData\\Local\\Programs\\Python\\Python310\\lib\\tracemalloc.py',
-   'PYMODULE'),
   ('stringprep',
    'C:\\Users\\Samir '
    'Hussein\\AppData\\Local\\Programs\\Python\\Python310\\lib\\stringprep.py',
+   'PYMODULE'),
+  ('tracemalloc',
+   'C:\\Users\\Samir '
+   'Hussein\\AppData\\Local\\Programs\\Python\\Python310\\lib\\tracemalloc.py',
    'PYMODULE'),
   ('shutil',
    'C:\\Users\\Samir '
