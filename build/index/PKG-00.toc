@@ -51,13 +51,13 @@
    'Hussein\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_multiprocessing.py',
    'PYSOURCE'),
   ('index', 'D:\\xampp\\htdocs\\terminal\\index.py', 'PYSOURCE'),
-  ('VCRUNTIME140.dll',
-   'C:\\Users\\Samir '
-   'Hussein\\AppData\\Local\\Programs\\Python\\Python310\\VCRUNTIME140.dll',
-   'BINARY'),
   ('python310.dll',
    'C:\\Users\\Samir '
    'Hussein\\AppData\\Local\\Programs\\Python\\Python310\\python310.dll',
+   'BINARY'),
+  ('VCRUNTIME140.dll',
+   'C:\\Users\\Samir '
+   'Hussein\\AppData\\Local\\Programs\\Python\\Python310\\VCRUNTIME140.dll',
    'BINARY'),
   ('_multiprocessing',
    'C:\\Users\\Samir '

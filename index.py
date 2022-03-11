@@ -32,7 +32,9 @@ commands = {
     'rmdir': "Remove directory",
     'rmdir -f': "Remove directory and all its content",
     'start': "open program",
-    'open': "open file"
+    'open': "open file",
+    'copy': "copy file",
+    'cpdir': "copy directory"
 }
 
 
@@ -102,7 +104,7 @@ def change_dir():
 
 def make_dir():
     global path
-    directorys = command.lstrip("mkdir ")
+    directorys = command.replace("mkdir ", '', 1)
 
     if not directorys == '':
         directorys = directorys.split(" ")
@@ -134,7 +136,7 @@ def list():
 
 def file():
     global path
-    file_name = command.lstrip('file ')
+    file_name = command.replace('file ', '', 1)
     if not file_name == '':
         file_name = file_name.split(" ")
     else:
@@ -152,7 +154,7 @@ def file():
 
 def rm_file():
     global path
-    file_name = command.lstrip('rmfile ')
+    file_name = command.replace('rmfile ', '', 1)
     if not file_name == '':
         file_name = file_name.split(" ")
     else:
@@ -171,9 +173,9 @@ def rm_file():
 def rm_dir():
     global path
     if '-f' in command:
-        dir_name = command.lstrip('rmdir -f ')
+        dir_name = command.replace('rmdir -f ', '', 1)
     else:
-        dir_name = command.lstrip('rmdir ')
+        dir_name = command.replace('rmdir ', '', 1)
 
     if not dir_name == '':
         dir_name = dir_name.split(" ")
@@ -201,7 +203,7 @@ def rm_dir():
 
 # open program
 def start():
-    program = command.lstrip('start ')
+    program = command.replace('start ', '', 1)
 
     if not program == '':
         try:
@@ -214,7 +216,7 @@ def start():
 
 # open file or directory
 def open():
-    file = command.lstrip('open ')
+    file = command.replace('open ', '', 1)
     if not file == '':
         file = file.replace("'", '')
         file = file.replace('"', '')
@@ -222,6 +224,40 @@ def open():
             return os.startfile(file)
         except:
             return print("'" + file + "' not found")
+    else:
+        return print("Command is not completed")
+
+
+def copy():
+    global path
+    file = command.replace("copy ", "", 1)
+
+    if not file == '':
+        file = file.split(" ")
+        src = path + "\\" + file[0]
+        des = path + "\\" + file[1]
+
+        try:
+            return shutil.copy(src, des)
+        except:
+            return print("Cannot copy this")
+    else:
+        return print("Command is not completed")
+
+
+def copy_dir():
+    global path
+    dir = command.replace("cpdir ", "", 1)
+
+    if not dir == '':
+        dir = dir.split(" ")
+        src = path + "\\" + dir[0]
+        des = path + "\\" + dir[1]
+
+        try:
+            return shutil.copytree(src, des)
+        except:
+            return print("Cannot copy this")
     else:
         return print("Command is not completed")
 
@@ -239,7 +275,9 @@ command_call = {
     'rmfile': rm_file,
     'rmdir': rm_dir,
     'start': start,
-    'open': open
+    'open': open,
+    'copy': copy,
+    'cpdir': copy_dir
 }
 
 
