@@ -34,7 +34,8 @@ commands = {
     'start': "open program",
     'open': "open file",
     'copy': "copy file",
-    'cpdir': "copy directory"
+    'cpdir': "copy directory",
+    'tasklist': "Show all processes"
 }
 
 
@@ -262,6 +263,13 @@ def copy_dir():
         return print("Command is not completed")
 
 
+def task_list():
+    if not command == 'tasklist':
+        return print("'" + command + "'", "is not recognized as an internal or external command")
+
+    return os.system('tasklist')
+
+
 command_call = {
     'help': help,
     'ip': ip_address,
@@ -277,7 +285,8 @@ command_call = {
     'start': start,
     'open': open,
     'copy': copy,
-    'cpdir': copy_dir
+    'cpdir': copy_dir,
+    'tasklist': task_list
 }
 
 
